@@ -27,6 +27,7 @@ class QueensAttackTest(unittest.TestCase):
         self.assertEqual(6, self.sut.solve_east_west((4, 4), 4))
         self.assertEqual(8, self.sut.solve_east_west((4, 3), 5))
 
-    def test_diagonals(self):
-        self.assertEqual(6, self.sut.solve_east_west((4, 4), 4))
-        self.assertEqual(8, self.sut.solve_east_west((4, 3), 5))
+    def test_solve_diagonal(self):
+        self.assertEqual(3, self.sut.solve_diagonal((4, 4), 4))
+        self.assertEqual(6, self.sut.solve_diagonal((4, 3), 5))
+
