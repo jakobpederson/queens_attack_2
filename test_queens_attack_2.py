@@ -31,3 +31,5 @@ class QueensAttackTest(unittest.TestCase):
         self.assertEqual(3, self.sut.solve_diagonal((4, 4), 4))
         self.assertEqual(6, self.sut.solve_diagonal((4, 3), 5))
 
+    def tests_blockers(self):
+        self.assertEqual(0, self.sut.solve_all((4, 3), 5, ((5, 5), (4, 3), (2, 3))))

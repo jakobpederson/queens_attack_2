@@ -26,3 +26,10 @@ class QueensAttack():
         if difference > 0:
             return 2 * (self.get_right(coord.x, length - difference) + self.get_left(coord.x - 1, length - difference))
         return self.get_right(coord.x, length - difference) + self.get_left(coord.x - 1, length - difference)
+
+    def solve_all(self, queen, length, blockers):
+        coord = Coordinates(y=queen[0], x=queen[1])
+        for blocker in blockers:
+            if blocker[0] == coord.y:
+                total = self.get_right(queen, length) + get_left(queen, length) -
+        return 0
